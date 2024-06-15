@@ -8,7 +8,7 @@ module.exports = {
     name: "play",
     description: "Add a song to queue and plays it.",
     cooldown: 5000,
-    aliases: ['p', 'ش', 'شغل'],
+    aliases: ['p', 'ش', 'play'],
     async execute(client, message, args) {
         try {
             if (message.guild.members.me.voice?.channelId && message.member.voice.channelId !== message.guild.members.me?.voice?.channelId) return message.reply({ content: `:no_entry_sign: You must be listening in \`${message.guild.members.me?.voice?.channel.name}\` to use that!` });
