@@ -7,7 +7,7 @@ module.exports = {
     name: "stop",
     description: "Stop the current song and clears the entire music queue.",
     cooldown: 5000,
-    aliases: ['st', 'ايقاف', 'وقف'],
+    aliases: ['st', 'stop', 'وقف'],
     async execute(client, message, args) {
         try {
             if (message.guild.members.me.voice?.channelId && message.member.voice.channelId !== message.guild.members.me?.voice?.channelId) return message.reply({ content: `:no_entry_sign: You must be listening in \`${message.guild.members.me?.voice?.channel.name}\` to use that!` });
