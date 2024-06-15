@@ -54,14 +54,14 @@ module.exports = {
                 .addComponents(
                     new ButtonBuilder()
                         .setStyle(ButtonStyle.Link)
-                        .setLabel('Invite Bot')
-                        .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`))
+                        .setLabel('made by 5lwf')
+                        .setURL(`https://tiktok.com/@heyimka`))
 
                 .addComponents(
                     new ButtonBuilder()
                         .setStyle(ButtonStyle.Link)
-                        .setLabel('Server Support')
-                        .setURL(`https://discord.gg/developer-tools`))
+                        .setLabel('Server Link')
+                        .setURL(`https://discord.gg/bu6abi`))
 
             message.reply({ embeds: [embed], components: [row] })
         } catch (err) {
